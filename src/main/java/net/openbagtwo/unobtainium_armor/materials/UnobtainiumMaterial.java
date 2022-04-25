@@ -14,7 +14,8 @@ public class UnobtainiumMaterial implements ArmorMaterial {
 
     @Override
     public int getDurability(EquipmentSlot slot) {
-        return BASE_DURABILITY[slot.getEntitySlotId()] * 1;  // oh yeah, gonna make em super fragile
+        // oh yeah, gonna make em super fragile
+        return BASE_DURABILITY[slot.getEntitySlotId()] * 1;
     }
 
     @Override
@@ -29,7 +30,8 @@ public class UnobtainiumMaterial implements ArmorMaterial {
 
     @Override
     public SoundEvent getEquipSound() {
-        return SoundEvents.ENTITY_WITHER_SPAWN;  // why not!
+        // Let's have fun with it!
+        return SoundEvents.ENTITY_WITHER_SPAWN;
     }
 
     @Override
@@ -44,11 +46,13 @@ public class UnobtainiumMaterial implements ArmorMaterial {
 
     @Override
     public float getToughness() {
-        return 100;  // tough but brittle I guess
+        // tough but brittle I guess
+        return 100;
     }
 
     @Override
     public float getKnockbackResistance() {
-        return 100;  // OP oh yeah
+        // I really don't care enough to be futzing with the mixins
+        return 0;
     }
 }
