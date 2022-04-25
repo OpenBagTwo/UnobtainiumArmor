@@ -1,6 +1,6 @@
-package net.openbagtwo.unobtainium_armor.items;
+package net.openbagtwo.unobtainiumarmor.items;
 
-import net.openbagtwo.unobtainium_armor.materials.UnobtainiumMaterial;
+import net.openbagtwo.unobtainiumarmor.materials.UnobtainiumMaterial;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;

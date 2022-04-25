@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "unobtainium-armor-mod",
+  "id": "unobtainiumarmor",
   "version": "${version}",
 
   "name": "Unobtainium Armor",
@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.openbagtwo.unobtainium_armor.UnobtainiumArmorMod"
+      "net.openbagtwo.unobtainiumarmor.UnobtainiumArmorMod"
     ]
   },
 

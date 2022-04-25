@@ -1,4 +1,4 @@
-package net.openbagtwo.unobtainium_armor.materials;
+package net.openbagtwo.unobtainiumarmor.materials;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;

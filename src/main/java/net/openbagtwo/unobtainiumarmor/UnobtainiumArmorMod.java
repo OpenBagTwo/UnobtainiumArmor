@@ -1,7 +1,7 @@
-package net.openbagtwo.unobtainium_armor;
+package net.openbagtwo.unobtainiumarmor;
 
 import net.fabricmc.api.ModInitializer;
-import net.openbagtwo.unobtainium_armor.items.RegisterItems;
+import net.openbagtwo.unobtainiumarmor.items.RegisterItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
