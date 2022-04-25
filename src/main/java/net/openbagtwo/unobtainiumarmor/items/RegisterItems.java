@@ -18,9 +18,9 @@ public class RegisterItems {
     public static final Item UNOBTAINIUM_BOOTS = new ArmorItem(unobtainiumMaterial, EquipmentSlot.FEET, new Item.Settings().group(MythicItems.UNOBTAINIUM.getGroup()));
 
     public static void register() {
-        Registry.register(Registry.ITEM, new Identifier("unobtainium", "unobtainium_helmet"), UNOBTAINIUM_HELMET);
-        Registry.register(Registry.ITEM, new Identifier("unobtainium", "unobtainium_chestplate"), UNOBTAINIUM_CHESTPLATE);
-        Registry.register(Registry.ITEM, new Identifier("unobtainium", "unobtainium_leggings"), UNOBTAINIUM_LEGGINGS);
-        Registry.register(Registry.ITEM, new Identifier("unobtainium", "unobtainium_boots"), UNOBTAINIUM_BOOTS);
+        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "unobtainium_helmet"), UNOBTAINIUM_HELMET);
+        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "unobtainium_chestplate"), UNOBTAINIUM_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "unobtainium_leggings"), UNOBTAINIUM_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "unobtainium_boots"), UNOBTAINIUM_BOOTS);
     }
 }
