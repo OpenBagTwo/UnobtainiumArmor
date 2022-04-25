@@ -1,19 +1,41 @@
 # Unobtainium Armor
 
-This is a toy project designed to get my feet wet with Minecraft
+![Craftable Unobtainium Armor](banner.png)
+
+<img src="https://i.imgur.com/Ol1Tcf8.png" alt="Requires Fabric" width="150"/>
+<img src="https://i.imgur.com/3mlP8IS.png" alt="Requires owo-lob" width="150"/>
+
+A quick little project designed to get my feet wet with Minecraft
 modding.
 
-My goal is simple:
+The goal is simple:
 
-- Add "Unobtainium Armor" to Minecraft.
+- Add "Unobtainium Armor" to Minecraft 1.18.1
 
-and I'm making it even simpler on myself by sourcing the Unobtainium
-from an existing mod,
+To make this mod even simpler,
+- The Unobtainium itself comes from an existing 1.18 mod,
 [Mythic Metals](https://www.curseforge.com/minecraft/mc-mods/mythicmetals)
+
+- The Unobtainium armor texture comes from an old (1.12 Forge) mod,
+[Extended Items and Ores](https://www.curseforge.com/minecraft/mc-mods/extended-items-and-ores-mod)
+
+which left me with nothing to do except follow [some tutorials](https://fabricmc.net/wiki/tutorial:armor).
+
+For the fun of it, I've made Unobtainium armor give _super powerful_ protection, but
+then nerfed it to have extremely low durability.
+
+This mod absolutely requires Fabric. It is extremely unlikely I will make a version
+for Forge. That being said, I'll probably update this mod to 1.19 once the rest of the
+mods my family relies on are upgraded.
 
 ## Setup and Use
 
-lol, I'll you know when I've actually built something
+1. Install Minecraft 1.18.1, Fabric and the Fabric API
+2. Install the [Mythic Metals](https://www.curseforge.com/minecraft/mc-mods/mythicmetals)
+   mod for 1.18.1 along with all its dependencies.
+3. Download this mod from the [release page](https://github.com/OpenBagTwo/UnobtainiumArmor/releases)
+   and drop it into your mods folder.
+4. Get yourself some unobtainium and get crafting!
 
 ## Credits
 
@@ -24,7 +46,8 @@ mod for 1.12.
 
 100% of the credit for the Unobtainium itself goes to
 [@Noaaan](https://github.com/Noaaan) for
-the MythicMetals mod.
+the [Mythic Metals](https://github.com/Noaaan/MythicMetals)
+mod.
 
 All code conventions and project structure are courtesy of 
 Fabric's excellent [modding tutorials](https://fabricmc.net/wiki/tutorial:armor)
@@ -48,4 +71,4 @@ mod and are used under the following terms:
 > My only request is that the mod is not replicated
 > and published as though you are the author,
 > putting it in a mod-pack or in any other way is fine,
-> just do not claim it as your own.
+> just do not claim it as your own._
