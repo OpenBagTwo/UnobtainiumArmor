@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mmm",
+    "m m"
+  ],
+  "key": {
+    "m": {
+      "item": "mythicmetals:unobtainium_ingot"
+    }
+  },
+  "result": {
+    "item": "unobtainiumarmor:unobtainium_helmet",
+    "count": 1
+  }
+}
