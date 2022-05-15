@@ -8,15 +8,16 @@
 A quick little project designed to get my feet wet with Minecraft
 modding.
 
-The goal is simple:
+The initial goal was simple:
 
 - Add "Unobtainium Armor" to Minecraft 1.18.1
 
 To make this mod even simpler,
-- The Unobtainium itself comes from an existing 1.18 mod,
+
+- The Unobtainium itself came from an existing 1.18 mod,
 [Mythic Metals](https://www.curseforge.com/minecraft/mc-mods/mythicmetals)
 
-- The Unobtainium armor texture comes from an old (1.12 Forge) mod,
+- The Unobtainium armor texture came from an old (1.12 Forge) mod,
 [Extended Items and Ores](https://www.curseforge.com/minecraft/mc-mods/extended-items-and-ores-mod)
 
 which left me with nothing to do except follow [some tutorials](https://fabricmc.net/wiki/tutorial:armor).
@@ -53,7 +54,8 @@ All code conventions and project structure are courtesy of
 Fabric's excellent [modding tutorials](https://fabricmc.net/wiki/tutorial:armor)
 and [example repos](https://github.com/gdude2002/Gilded-Netherite).
 
-
+I also used [MCreator](https://mcreator.net/) to generate sets of
+armor textures.
 
 ## License
 
@@ -61,7 +63,8 @@ Any code in this mod that is not adapted
 [directly from the Fabric mod template](https://github.com/FabricMC/fabric-example-mod)
 is licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
-All textures are taken from [lElChiel](https://www.curseforge.com/members/lelchiel)'s
+Unobtainium Armor textures are taken from
+[lElChiel](https://www.curseforge.com/members/lelchiel)'s
 [Extended Items and Ores](https://www.curseforge.com/minecraft/mc-mods/extended-items-and-ores-mod)
 mod and are used under the following terms:
 
