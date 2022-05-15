@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ms ",
+    "mgs",
+    "mmm"
+  ],
+  "key": {
+    "m": {
+      "item": "mythicmetals:unobtainium"
+    },
+    "s": {
+      "item": "minecraft:slime_ball"
+    },
+    "s": {
+      "item": "minecraft:ghast_tear"
+    }
+  },
+  "result": {
+    "item": "unobtainiumarmor:friggin_ray_gun",
+    "count": 1
+  }
+}
