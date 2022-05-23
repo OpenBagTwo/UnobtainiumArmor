@@ -1,11 +1,8 @@
 package net.openbagtwo.unobtainiumarmor;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
-import net.minecraft.particle.DefaultParticleType;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import net.openbagtwo.unobtainiumarmor.items.RegisterItems;
+import net.openbagtwo.unobtainiumarmor.particle.RegisterParticles;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,11 +12,11 @@ public class UnobtainiumArmorMod implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger("unobtainium-armor-mod");
 
-	public static final DefaultParticleType F_RAY = FabricParticleTypes.simple(false);
+
 	@Override
 	public void onInitialize() {
-		Registry.register(Registry.PARTICLE_TYPE, new Identifier("unobtainiumarmor", "f_ray"), F_RAY);
 		RegisterItems.register();
+		RegisterParticles.register();
 		LOGGER.info("UnobtainiumArmor mod initialized.");
 	}
 }

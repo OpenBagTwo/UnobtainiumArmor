@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.event.client.ClientSpriteRegistryCallback;
 import net.minecraft.client.particle.SpitParticle;
 import net.minecraft.screen.PlayerScreenHandler;
 import net.minecraft.util.Identifier;
+import net.openbagtwo.unobtainiumarmor.particle.RegisterParticles;
 
 public class UnobtainiumArmorModClient implements ClientModInitializer {
 
@@ -15,6 +16,6 @@ public class UnobtainiumArmorModClient implements ClientModInitializer {
             registry.register(new Identifier("unobtainiumarmor", "particle/f_ray"));
         }));
 
-        ParticleFactoryRegistry.getInstance().register(UnobtainiumArmorMod.F_RAY, SpitParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(RegisterParticles.F_RAY, SpitParticle.Factory::new);
     }
 }
