@@ -14,5 +14,12 @@
   "item.unobtainiumarmor.alexandrite_boots": "Alexandrite Boots",
   "item.unobtainiumarmor.alexandrite": "Alexandrite Ingot",
   "item.unobtainiumarmor.alexandrite_block": "Block of Alexandrite",
-  "item.unobtainiumarmor.alexandrite_ore": "Alexandrite Ore"
+  "item.unobtainiumarmor.alexandrite_ore": "Alexandrite Ore",
+  "item.unobtainiumarmor.sapphire_helmet": "Sapphire Helmet",
+  "item.unobtainiumarmor.sapphire_chestplate": "Sapphire Chestplate",
+  "item.unobtainiumarmor.sapphire_leggings": "Sapphire Leggings",
+  "item.unobtainiumarmor.sapphire_boots": "Sapphire Boots",
+  "item.unobtainiumarmor.sapphire": "Sapphire",
+  "item.unobtainiumarmor.sapphire_block": "Block of Sapphire",
+  "item.unobtainiumarmor.sapphire_ore": "Sapphire Ore"
 }

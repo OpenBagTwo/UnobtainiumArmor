@@ -50,6 +50,9 @@ mod for 1.12.
 the [Mythic Metals](https://github.com/Noaaan/MythicMetals)
 mod.
 
+Some assets have also been adapted from the mod
+[SilentGems by SilentChaos512](https://github.com/SilentChaos512/SilentGems).
+
 All code conventions and project structure are courtesy of 
 Fabric's excellent [modding tutorials](https://fabricmc.net/wiki/tutorial:armor)
 and [example repos](https://github.com/gdude2002/Gilded-Netherite).
@@ -75,3 +78,5 @@ mod and are used under the following terms:
 > and published as though you are the author,
 > putting it in a mod-pack or in any other way is fine,
 > just do not claim it as your own._
+
+
