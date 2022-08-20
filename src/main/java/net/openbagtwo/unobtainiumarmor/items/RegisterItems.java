@@ -49,27 +49,27 @@ public class RegisterItems {
 
 
     public static void register() {
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "unobtainium_helmet"), UNOBTAINIUM_HELMET);
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "unobtainium_chestplate"), UNOBTAINIUM_CHESTPLATE);
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "unobtainium_leggings"), UNOBTAINIUM_LEGGINGS);
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "unobtainium_boots"), UNOBTAINIUM_BOOTS);
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "platinum_helmet"), PLATINUM_HELMET);
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "platinum_chestplate"), PLATINUM_CHESTPLATE);
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "platinum_leggings"), PLATINUM_LEGGINGS);
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "platinum_boots"), PLATINUM_BOOTS);
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "alexandrite"), ALEXANDRITE);
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "alexandrite_helmet"), ALEXANDRITE_HELMET);
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "alexandrite_chestplate"), ALEXANDRITE_CHESTPLATE);
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "alexandrite_leggings"), ALEXANDRITE_LEGGINGS);
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "alexandrite_boots"), ALEXANDRITE_BOOTS);
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "sapphire_helmet"), SAPPHIRE_HELMET);
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "sapphire_chestplate"), SAPPHIRE_CHESTPLATE);
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "sapphire_leggings"), SAPPHIRE_LEGGINGS);
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "sapphire_boots"), SAPPHIRE_BOOTS);
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "cats_eye_gem"), CATS_EYE_GEM);
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "cats_eye_gem_helmet"), CATS_EYE_GEM_HELMET);
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "cats_eye_gem_chestplate"), CATS_EYE_GEM_CHESTPLATE);
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "cats_eye_gem_leggings"), CATS_EYE_GEM_LEGGINGS);
-        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "cats_eye_gem_boots"), CATS_EYE_GEM_BOOTS);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "unobtainium_helmet"), UNOBTAINIUM_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "unobtainium_chestplate"), UNOBTAINIUM_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "unobtainium_leggings"), UNOBTAINIUM_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "unobtainium_boots"), UNOBTAINIUM_BOOTS);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "platinum_helmet"), PLATINUM_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "platinum_chestplate"), PLATINUM_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "platinum_leggings"), PLATINUM_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "platinum_boots"), PLATINUM_BOOTS);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "alexandrite"), ALEXANDRITE);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "alexandrite_helmet"), ALEXANDRITE_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "alexandrite_chestplate"), ALEXANDRITE_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "alexandrite_leggings"), ALEXANDRITE_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "alexandrite_boots"), ALEXANDRITE_BOOTS);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "sapphire_helmet"), SAPPHIRE_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "sapphire_chestplate"), SAPPHIRE_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "sapphire_leggings"), SAPPHIRE_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "sapphire_boots"), SAPPHIRE_BOOTS);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "cats_eye_gem"), CATS_EYE_GEM);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "cats_eye_gem_helmet"), CATS_EYE_GEM_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "cats_eye_gem_chestplate"), CATS_EYE_GEM_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "cats_eye_gem_leggings"), CATS_EYE_GEM_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "cats_eye_gem_boots"), CATS_EYE_GEM_BOOTS);
     }
 }

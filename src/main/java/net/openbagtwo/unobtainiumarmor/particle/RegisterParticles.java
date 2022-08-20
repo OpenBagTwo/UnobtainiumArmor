@@ -10,6 +10,6 @@ public class RegisterParticles {
     public static final DefaultParticleType F_RAY = FabricParticleTypes.simple(false);
 
     public static void register() {
-        // Registry.register(Registry.PARTICLE_TYPE, new Identifier("unobtainiumarmor", "f_ray"), F_RAY);
+        // Registry.register(Registry.PARTICLE_TYPE, new Identifier(UnobtainiumArmorMod.MOD_ID, "f_ray"), F_RAY);
     }
 }
