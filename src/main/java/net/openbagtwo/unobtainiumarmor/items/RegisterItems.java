@@ -2,10 +2,7 @@ package net.openbagtwo.unobtainiumarmor.items;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.openbagtwo.unobtainiumarmor.UnobtainiumArmorMod;
-import net.openbagtwo.unobtainiumarmor.materials.AlexandriteMaterial;
-import net.openbagtwo.unobtainiumarmor.materials.PlatinumMaterial;
-import net.openbagtwo.unobtainiumarmor.materials.SapphireMaterial;
-import net.openbagtwo.unobtainiumarmor.materials.UnobtainiumMaterial;
+import net.openbagtwo.unobtainiumarmor.materials.*;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -14,6 +11,7 @@ import net.minecraft.util.registry.Registry;
 import nourl.mythicmetals.item.MythicItems;
 
 import static net.openbagtwo.unobtainiumarmor.items.Alexandrite.ALEXANDRITE;
+import static net.openbagtwo.unobtainiumarmor.items.CatsEyeGem.CATS_EYE_GEM;
 import static net.openbagtwo.unobtainiumarmor.items.Sapphire.SAPPHIRE;
 
 public class RegisterItems {
@@ -21,8 +19,8 @@ public class RegisterItems {
     public static final ArmorMaterial unobtainiumMaterial = new UnobtainiumMaterial();
     public static final ArmorMaterial platinumMaterial = new PlatinumMaterial();
     public static final ArmorMaterial alexandriteMaterial = new AlexandriteMaterial();
-
     public static final ArmorMaterial sapphireMaterial = new SapphireMaterial();
+    public static final ArmorMaterial catsEyeMaterial = new CatsEyeMaterial();
 
     public static final Item UNOBTAINIUM_HELMET = new ArmorItem(unobtainiumMaterial, EquipmentSlot.HEAD, new Item.Settings().group(MythicItems.UNOBTAINIUM.getGroup()));
     public static final Item UNOBTAINIUM_CHESTPLATE = new ArmorItem(unobtainiumMaterial, EquipmentSlot.CHEST, new Item.Settings().group(MythicItems.UNOBTAINIUM.getGroup()));
@@ -44,6 +42,12 @@ public class RegisterItems {
     public static final Item SAPPHIRE_LEGGINGS = new ArmorItem(sapphireMaterial, EquipmentSlot.LEGS, new Item.Settings().group(SAPPHIRE.getGroup()));
     public static final Item SAPPHIRE_BOOTS = new ArmorItem(sapphireMaterial, EquipmentSlot.FEET, new Item.Settings().group(SAPPHIRE.getGroup()));
 
+    public static final Item CATS_EYE_GEM_HELMET = new ArmorItem(catsEyeMaterial, EquipmentSlot.HEAD, new Item.Settings().group(CATS_EYE_GEM.getGroup()));
+    public static final Item CATS_EYE_GEM_CHESTPLATE = new ArmorItem(catsEyeMaterial, EquipmentSlot.CHEST, new Item.Settings().group(CATS_EYE_GEM.getGroup()));
+    public static final Item CATS_EYE_GEM_LEGGINGS = new ArmorItem(catsEyeMaterial, EquipmentSlot.LEGS, new Item.Settings().group(CATS_EYE_GEM.getGroup()));
+    public static final Item CATS_EYE_GEM_BOOTS = new ArmorItem(catsEyeMaterial, EquipmentSlot.FEET, new Item.Settings().group(CATS_EYE_GEM.getGroup()));
+
+
     public static void register() {
         Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "unobtainium_helmet"), UNOBTAINIUM_HELMET);
         Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "unobtainium_chestplate"), UNOBTAINIUM_CHESTPLATE);
@@ -62,5 +66,10 @@ public class RegisterItems {
         Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "sapphire_chestplate"), SAPPHIRE_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "sapphire_leggings"), SAPPHIRE_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "sapphire_boots"), SAPPHIRE_BOOTS);
+        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "cats_eye_gem"), CATS_EYE_GEM);
+        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "cats_eye_gem_helmet"), CATS_EYE_GEM_HELMET);
+        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "cats_eye_gem_chestplate"), CATS_EYE_GEM_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "cats_eye_gem_leggings"), CATS_EYE_GEM_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier("unobtainiumarmor", "cats_eye_gem_boots"), CATS_EYE_GEM_BOOTS);
     }
 }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mmm",
+    "m m"
+  ],
+  "key": {
+    "m": {
+      "item": "unobtainiumarmor:cats_eye_gem"
+    }
+  },
+  "result": {
+    "item": "unobtainiumarmor:cats_eye_gem_helmet",
+    "count": 1
+  }
+}
