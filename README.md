@@ -4,6 +4,7 @@
 
 <img src="https://i.imgur.com/Ol1Tcf8.png" alt="Requires Fabric" width="150"/>
 <img src="https://i.imgur.com/3mlP8IS.png" alt="Requires owo-lob" width="150"/>
+<img src="https://raw.githubusercontent.com/paulevsGitch/BCLib/main/bclib_banner.png" alt="Requires bclib" width="150"/>
 
 A quick little project designed to get my feet wet with Minecraft
 modding.
@@ -34,6 +35,8 @@ mods my family relies on are upgraded.
 1. Install Minecraft 1.18.1, Fabric and the Fabric API
 2. Install the [Mythic Metals](https://www.curseforge.com/minecraft/mc-mods/mythicmetals)
    mod for 1.18.1 along with all its dependencies.
+3. Install the [BetterEnd mod](https://www.curseforge.com/minecraft/mc-mods/betterend) for 1.18 and the corresponding 
+   version of [BCLib](https://www.curseforge.com/minecraft/mc-mods/bclib).
 3. Download this mod from the [release page](https://github.com/OpenBagTwo/UnobtainiumArmor/releases)
    and drop it into your mods folder.
 4. Get yourself some unobtainium and get crafting!
