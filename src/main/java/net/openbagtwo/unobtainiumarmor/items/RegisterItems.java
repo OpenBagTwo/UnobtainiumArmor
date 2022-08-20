@@ -1,6 +1,5 @@
 package net.openbagtwo.unobtainiumarmor.items;
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.openbagtwo.unobtainiumarmor.UnobtainiumArmorMod;
 import net.openbagtwo.unobtainiumarmor.materials.*;
 import net.minecraft.entity.EquipmentSlot;
@@ -9,6 +8,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 import nourl.mythicmetals.item.MythicItems;
+import ru.betterend.item.ArmoredElytra;
 
 import static net.openbagtwo.unobtainiumarmor.items.Alexandrite.ALEXANDRITE;
 import static net.openbagtwo.unobtainiumarmor.items.CatsEyeGem.CATS_EYE_GEM;
@@ -47,6 +47,7 @@ public class RegisterItems {
     public static final Item CATS_EYE_GEM_LEGGINGS = new ArmorItem(catsEyeMaterial, EquipmentSlot.LEGS, new Item.Settings().group(CATS_EYE_GEM.getGroup()));
     public static final Item CATS_EYE_GEM_BOOTS = new ArmorItem(catsEyeMaterial, EquipmentSlot.FEET, new Item.Settings().group(CATS_EYE_GEM.getGroup()));
 
+    public static final Item CATS_EYE_GEM_ELYTRA = new ArmoredElytra("cats_eye_gem_elytra", catsEyeMaterial, CATS_EYE_GEM, CATS_EYE_GEM_CHESTPLATE.getMaxDamage(), 0.999, false);
 
     public static void register() {
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "unobtainium_helmet"), UNOBTAINIUM_HELMET);
@@ -62,6 +63,7 @@ public class RegisterItems {
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "alexandrite_chestplate"), ALEXANDRITE_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "alexandrite_leggings"), ALEXANDRITE_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "alexandrite_boots"), ALEXANDRITE_BOOTS);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "sapphire"), SAPPHIRE);
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "sapphire_helmet"), SAPPHIRE_HELMET);
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "sapphire_chestplate"), SAPPHIRE_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "sapphire_leggings"), SAPPHIRE_LEGGINGS);
@@ -71,5 +73,6 @@ public class RegisterItems {
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "cats_eye_gem_chestplate"), CATS_EYE_GEM_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "cats_eye_gem_leggings"), CATS_EYE_GEM_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "cats_eye_gem_boots"), CATS_EYE_GEM_BOOTS);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "cats_eye_gem_elytra"), CATS_EYE_GEM_ELYTRA);
     }
 }

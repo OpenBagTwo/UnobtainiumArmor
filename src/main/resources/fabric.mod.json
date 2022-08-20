@@ -28,6 +28,8 @@
     "fabric": "*",
     "minecraft": "1.18.1",
     "java": ">=17",
-    "mythicmetals": "0.12.2"
+    "mythicmetals": "0.12.2",
+    "bclib": "1.3.5",
+    "betterend": "1.0.3"
   }
 }

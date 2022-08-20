@@ -18,6 +18,22 @@ repositories {
 			includeGroup "maven.modrinth"
 		}
 	}
+	maven {
+		name = "Geckolib"
+		url = "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/"
+		content {
+			includeGroup "software.bernie.geckolib"
+			includeGroup "com.eliotlash.molang"
+			includeGroup "com.eliotlash.mclib"
+		}
+	}
+	maven {
+		name "Curseforege"
+		url "https://cursemaven.com"
+		content {
+			includeGroup "curse.maven"
+		}
+	}
 }
 
 dependencies {
@@ -29,8 +45,13 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	// Mythic Metals
 	modImplementation("maven.modrinth:mythicmetals:${project.mythicmetals_version}")
+
+	modImplementation "software.bernie.geckolib:geckolib-fabric-${project.geckolib_version}"
+
+	modImplementation "curse.maven:bclib-495191:3680592"
+	modImplementation "curse.maven:betterend-413596:3680606"
+
 }
 
 processResources {
