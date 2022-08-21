@@ -11,6 +11,7 @@ import nourl.mythicmetals.item.MythicItems;
 import ru.betterend.item.ArmoredElytra;
 
 import static net.openbagtwo.unobtainiumarmor.items.Alexandrite.ALEXANDRITE;
+import static net.openbagtwo.unobtainiumarmor.items.Bumblenado.BUMBLENADO_GEM;
 import static net.openbagtwo.unobtainiumarmor.items.CatsEyeGem.CATS_EYE_GEM;
 import static net.openbagtwo.unobtainiumarmor.items.Sapphire.SAPPHIRE;
 
@@ -21,6 +22,7 @@ public class RegisterItems {
     public static final ArmorMaterial alexandriteMaterial = new AlexandriteMaterial();
     public static final ArmorMaterial sapphireMaterial = new SapphireMaterial();
     public static final ArmorMaterial catsEyeMaterial = new CatsEyeMaterial();
+    public static final ArmorMaterial bumblenadoMaterial = new BumblenadoMaterial();
 
     public static final Item UNOBTAINIUM_HELMET = new ArmorItem(unobtainiumMaterial, EquipmentSlot.HEAD, new Item.Settings().group(MythicItems.UNOBTAINIUM.getGroup()));
     public static final Item UNOBTAINIUM_CHESTPLATE = new ArmorItem(unobtainiumMaterial, EquipmentSlot.CHEST, new Item.Settings().group(MythicItems.UNOBTAINIUM.getGroup()));
@@ -49,6 +51,14 @@ public class RegisterItems {
 
     public static final Item CATS_EYE_GEM_ELYTRA = new ArmoredElytra("cats_eye_gem_elytra", catsEyeMaterial, CATS_EYE_GEM, CATS_EYE_GEM_CHESTPLATE.getMaxDamage(), 0.999, false);
 
+
+    public static final Item BUMBLENADO_HELMET = new ArmorItem(bumblenadoMaterial, EquipmentSlot.HEAD, new Item.Settings().group(BUMBLENADO_GEM.getGroup()));
+    public static final Item BUMBLENADO_CHESTPLATE = new ArmorItem(bumblenadoMaterial, EquipmentSlot.CHEST, new Item.Settings().group(BUMBLENADO_GEM.getGroup()));
+    public static final Item BUMBLENADO_LEGGINGS = new ArmorItem(bumblenadoMaterial, EquipmentSlot.LEGS, new Item.Settings().group(BUMBLENADO_GEM.getGroup()));
+    public static final Item BUMBLENADO_BOOTS = new ArmorItem(bumblenadoMaterial, EquipmentSlot.FEET, new Item.Settings().group(BUMBLENADO_GEM.getGroup()));
+
+    public static final Item BUMBLENADO_ELYTRA = new ArmoredElytra("bumblenado_elytra", bumblenadoMaterial, BUMBLENADO_GEM, BUMBLENADO_CHESTPLATE.getMaxDamage(), 0.83, true);
+
     public static void register() {
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "unobtainium_helmet"), UNOBTAINIUM_HELMET);
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "unobtainium_chestplate"), UNOBTAINIUM_CHESTPLATE);
@@ -74,5 +84,11 @@ public class RegisterItems {
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "cats_eye_gem_leggings"), CATS_EYE_GEM_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "cats_eye_gem_boots"), CATS_EYE_GEM_BOOTS);
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "cats_eye_gem_elytra"), CATS_EYE_GEM_ELYTRA);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "bumblenado_gem"), BUMBLENADO_GEM);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "bumblenado_helmet"), BUMBLENADO_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "bumblenado_chestplate"), BUMBLENADO_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "bumblenado_leggings"), BUMBLENADO_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "bumblenado_boots"), BUMBLENADO_BOOTS);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "bumblenado_elytra"), BUMBLENADO_ELYTRA);
     }
 }
