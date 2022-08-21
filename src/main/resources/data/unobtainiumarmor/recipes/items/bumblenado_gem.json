@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "hhh",
+    "hch",
+    "hhh"
+  ],
+  "key": {
+    "h": {
+      "item": "minecraft:honey_bottle"
+    },
+    "c": {
+      "item": "more_gems:carbonado"
+    }
+  },
+  "result": {
+    "item": "unobtainiumarmor:bumblenado_gem",
+    "count": 1
+  }
+}
