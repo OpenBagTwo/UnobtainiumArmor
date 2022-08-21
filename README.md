@@ -53,8 +53,12 @@ mod for 1.12.
 the [Mythic Metals](https://github.com/Noaaan/MythicMetals)
 mod.
 
-Some assets have also been adapted from the mod
-[SilentGems by SilentChaos512](https://github.com/SilentChaos512/SilentGems).
+Some assets have also been adapted from the mods
+[SilentGems](https://github.com/SilentChaos512/SilentGems) by
+[SilentChaos512](https://github.com/silentchaos512)
+and
+[MoreGems](https://www.curseforge.com/minecraft/mc-mods/more-gems-fabric) by
+[kwpugh](https://github.com/kwpugh).
 
 All code conventions and project structure are courtesy of 
 Fabric's excellent [modding tutorials](https://fabricmc.net/wiki/tutorial:armor)
@@ -81,5 +85,3 @@ mod and are used under the following terms:
 > and published as though you are the author,
 > putting it in a mod-pack or in any other way is fine,
 > just do not claim it as your own._
-
-
