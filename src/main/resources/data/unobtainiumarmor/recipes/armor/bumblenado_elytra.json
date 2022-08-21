@@ -4,13 +4,13 @@
     "ce"
   ],
   "key": {
-    "c": "bumblenado_chestplate",
+    "c": "unobtainiumarmor:bumblenado_chestplate",
     "e": {
       "item": "minecraft:elytra"
     }
   },
   "result": {
-    "item": "unobtainiumarmor:cats_eye_gem_elytra",
+    "item": "unobtainiumarmor:bumblenado_elytra",
     "count": 1
   }
 }

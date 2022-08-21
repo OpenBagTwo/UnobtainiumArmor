@@ -6,10 +6,10 @@
     "mmm"
   ],
   "key": {
-    "m": "bumblenado_gem"
+    "m": "unobtainiumarmor:bumblenado_gem"
   },
   "result": {
-    "item": "unobtainiumarmor:cats_eye_gem_chestplate",
+    "item": "unobtainiumarmor:bumblenado_chestplate",
     "count": 1
   }
 }
