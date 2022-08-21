@@ -4,7 +4,9 @@
     "ce"
   ],
   "key": {
-    "c": "unobtainiumarmor:bumblenado_chestplate",
+    "c": {
+      "item": "unobtainiumarmor:bumblenado_chestplate"
+    },
     "e": {
       "item": "minecraft:elytra"
     }

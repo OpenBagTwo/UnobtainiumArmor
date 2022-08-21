@@ -5,7 +5,9 @@
     "m m"
   ],
   "key": {
-    "m": "unobtainiumarmor:bumblenado_gem"
+    "m": {
+      "item": "unobtainiumarmor:bumblenado_gem"
+    }
   },
   "result": {
     "item": "unobtainiumarmor:bumblenado_boots",
