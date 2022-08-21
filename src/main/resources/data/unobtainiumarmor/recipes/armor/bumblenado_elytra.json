@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ce"
+  ],
+  "key": {
+    "c": "bumblenado_chestplate",
+    "e": {
+      "item": "minecraft:elytra"
+    }
+  },
+  "result": {
+    "item": "unobtainiumarmor:cats_eye_gem_elytra",
+    "count": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "m m",
+    "m m"
+  ],
+  "key": {
+    "m": "bumblenado_gem"
+  },
+  "result": {
+    "item": "unobtainiumarmor:cats_eye_gem_boots",
+    "count": 1
+  }
+}
