@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.openbagtwo.unobtainiumarmor.UnobtainiumArmorMod"
+    ],
+    "client": [
+      "net.openbagtwo.unobtainiumarmor.UnobtainiumArmorModClient"
     ]
   },
 
@@ -30,6 +33,7 @@
     "java": ">=17",
     "mythicmetals": "0.12.2",
     "bclib": "1.3.5",
-    "betterend": "1.0.3"
+    "betterend": "1.0.3",
+    "geckolib3": "*"
   }
 }

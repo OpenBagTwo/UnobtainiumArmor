@@ -60,6 +60,9 @@ and
 [MoreGems](https://www.curseforge.com/minecraft/mc-mods/more-gems-fabric) by
 [kwpugh](https://github.com/kwpugh).
 
+Mythril Armor Model and Textures are taken from [Modding by Kaupenjoe](https://www.youtube.com/c/TKaupenjoe)'s
+[tutorial on Fabric modding using Geckolib](https://github.com/Tutorials-By-Kaupenjoe/Fabric-Tutorial-1.18.1).
+
 All code conventions and project structure are courtesy of 
 Fabric's excellent [modding tutorials](https://fabricmc.net/wiki/tutorial:armor)
 and [example repos](https://github.com/gdude2002/Gilded-Netherite).
@@ -71,9 +74,10 @@ armor textures.
 
 Any code in this mod that is not adapted
 [directly from the Fabric mod template](https://github.com/FabricMC/fabric-example-mod)
-is licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
+or otherwise specified **is licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)**.
 
-Unobtainium Armor textures are taken from
+### Unobtainium Armor texture
+sUnobtainium Armor textures are taken from
 [lElChiel](https://www.curseforge.com/members/lelchiel)'s
 [Extended Items and Ores](https://www.curseforge.com/minecraft/mc-mods/extended-items-and-ores-mod)
 mod and are used under the following terms:
@@ -85,3 +89,29 @@ mod and are used under the following terms:
 > and published as though you are the author,
 > putting it in a mod-pack or in any other way is fine,
 > just do not claim it as your own._
+
+### Mythril Armor Models, Textures and Implementations
+Kaupenjoe's assets and source code (basically anything having to do with Mythril Armor) are provided
+under the MIT license:
+
+> MIT License
+>
+> Copyright (c) 2021 Tutorials By Kaupenjoe
+>
+> Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+>
+> The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+>
+> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
