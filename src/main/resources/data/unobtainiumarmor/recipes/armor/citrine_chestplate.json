@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "m m",
+    "mmm",
+    "mmm"
+  ],
+  "key": {
+    "m": {
+      "item": "unobtainiumarmor:citrine_crystal"
+    }
+  },
+  "result": {
+    "item": "unobtainiumarmor:citrine_chestplate",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mmm",
+    "m m"
+  ],
+  "key": {
+    "m": {
+      "item": "unobtainiumarmor:citrine_crystal"
+    }
+  },
+  "result": {
+    "item": "unobtainiumarmor:citrine_helmet",
+    "count": 1
+  }
+}

@@ -6,10 +6,12 @@ import net.fabricmc.fabric.api.event.client.ClientSpriteRegistryCallback;
 import net.minecraft.client.particle.SpitParticle;
 import net.minecraft.screen.PlayerScreenHandler;
 import net.minecraft.util.Identifier;
+import net.openbagtwo.unobtainiumarmor.entity.client.armor.CythrilArmorRenderer;
 import net.openbagtwo.unobtainiumarmor.entity.client.armor.MythrilArmorRenderer;
 import net.openbagtwo.unobtainiumarmor.particle.RegisterParticles;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
+import static net.openbagtwo.unobtainiumarmor.items.CythrilArmorItem.*;
 import static net.openbagtwo.unobtainiumarmor.items.MythrilArmorItem.*;
 
 public class UnobtainiumArmorModClient implements ClientModInitializer {
@@ -28,6 +30,13 @@ public class UnobtainiumArmorModClient implements ClientModInitializer {
                 MYTHRIL_CHESTPLATE,
                 MYTHRIL_LEGGINGS,
                 MYTHRIL_BOOTS
+        );
+        GeoArmorRenderer.registerArmorRenderer(
+                new CythrilArmorRenderer(),
+                CYTHRIL_HELMET,
+                CYTHRIL_CHESTPLATE,
+                CYTHRIL_LEGGINGS,
+                CYTHRIL_BOOTS
         );
     }
 }

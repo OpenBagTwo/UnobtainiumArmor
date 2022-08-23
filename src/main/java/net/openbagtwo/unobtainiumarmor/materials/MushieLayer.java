@@ -8,6 +8,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.openbagtwo.unobtainiumarmor.UnobtainiumArmorMod;
 
+import static net.openbagtwo.unobtainiumarmor.items.MushieItem.GOOMBA_COIN_COIN;
+
 public class MushieLayer implements ArmorMaterial {
 
     public static final MushieLayer GOOMBA_LAYER = new MushieLayer();
@@ -43,7 +45,7 @@ public class MushieLayer implements ArmorMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems();
+        return Ingredient.ofItems(GOOMBA_COIN_COIN);
     }
 
     @Override
