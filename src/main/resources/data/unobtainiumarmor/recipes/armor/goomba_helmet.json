@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mmm",
+    "m m"
+  ],
+  "key": {
+    "m": {
+      "item": "unobtainiumarmor:goomba_coin_coin"
+    }
+  },
+  "result": {
+    "item": "unobtainiumarmor:goomba_helmet",
+    "count": 1
+  }
+}
