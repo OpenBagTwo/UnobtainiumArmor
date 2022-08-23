@@ -1,0 +1,6 @@
+{
+    "goombna_armor_equip": {
+        "category": "player",
+        "sounds": ["unobtainiumarmor:item/armor/bruh"]
+    }
+}

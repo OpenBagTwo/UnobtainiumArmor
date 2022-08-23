@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mmm",
+    "mem",
+    "mmm"
+  ],
+  "key": {
+    "m": {
+      "item": "minecraft:brown_mushroom"
+    },
+    "e": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "result": {
+    "item": "unobtainiumarmor:goomba_coin_coin",
+    "count": 1
+  }
+}

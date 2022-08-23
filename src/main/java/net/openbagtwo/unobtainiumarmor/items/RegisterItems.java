@@ -95,5 +95,11 @@ public class RegisterItems {
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "mythril_leggings"), MythrilArmorItem.MYTHRIL_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "mythril_boots"), MythrilArmorItem.MYTHRIL_BOOTS);
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "mythril_elytra"), MythrilArmorItem.MYTHRIL_ELYTRA);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "goomba_coin_coin"), MushieItem.GOOMBA_COIN_COIN);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "goomba_helmet"), MushieItem.GOOMBA_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "goomba_chestplate"), MushieItem.GOOMBA_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "goomba_leggings"), MushieItem.GOOMBA_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "goomba_boots"), MushieItem.GOOMBA_BOOTS);
+        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "goomba_elytra"), MushieItem.GOOMBA_ELYTRA);
     }
 }
