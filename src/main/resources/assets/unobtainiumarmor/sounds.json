@@ -1,5 +1,5 @@
 {
-    "goombna_armor_equip": {
+    "goomba_armor_equip": {
         "category": "player",
         "sounds": ["unobtainiumarmor:item/armor/bruh"]
     }
