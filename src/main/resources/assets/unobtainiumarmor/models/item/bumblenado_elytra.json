@@ -2,5 +2,13 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "unobtainiumarmor:item/bumblenado_elytra"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "broken": 1
+      },
+      "model": "betterend:item/elytra_armored_broken"
+    }
+  ]
 }

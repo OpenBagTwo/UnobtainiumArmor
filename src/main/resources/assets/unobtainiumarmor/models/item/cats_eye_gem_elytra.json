@@ -8,7 +8,7 @@
             "predicate": {
                 "broken": 1
             },
-            "model": "minecraft:item/elytra_armored_broken"
+            "model": "betterend:item/elytra_armored_broken"
         }
     ]
 }
