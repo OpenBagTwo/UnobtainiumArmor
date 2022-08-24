@@ -4,8 +4,8 @@ import net.openbagtwo.unobtainiumarmor.items.MythrilArmorItem;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 public class MythrilArmorRenderer extends GeoArmorRenderer<MythrilArmorItem> {
-    public MythrilArmorRenderer() {
-        super(new MythrilArmorModel());
+    public MythrilArmorRenderer(MythrilArmorModel armorModel) {
+        super(armorModel);
         this.headBone = "armorHead";
         this.bodyBone = "armorBody";
         this.rightArmBone = "armorRightArm";
@@ -14,6 +14,17 @@ public class MythrilArmorRenderer extends GeoArmorRenderer<MythrilArmorItem> {
         this.leftLegBone = "armorRightLeg";
         this.rightBootBone = "armorLeftBoot";
         this.leftBootBone = "armorRightBoot";
+    }
+
+    public static final MythrilArmorRenderer MYTHRIL = new MythrilArmorRenderer(MythrilArmorModel.MYTHRIL);
+
+    public static MythrilArmorRenderer createMythrilRenderer(MythrilArmorModel armorModel){
+        return new MythrilArmorRenderer(armorModel);
+    }
+
+    public static MythrilArmorRenderer createMythrilRenderer(String name){
+        MythrilArmorModel armorModel = MythrilArmorModel.MYTHRIL.setTexture(name);
+        return createMythrilRenderer(armorModel);
     }
 }
 
