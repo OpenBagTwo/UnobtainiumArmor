@@ -1,17 +1,19 @@
 package net.openbagtwo.unobtainiumarmor.materials;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.openbagtwo.unobtainiumarmor.UnobtainiumArmorMod;
 
-import static net.openbagtwo.unobtainiumarmor.items.MushieItem.GOOMBA_COIN_COIN;
-
 public class MushieLayer implements ArmorMaterial {
 
+    public static final Item GOOMBA_COIN_COIN = new Item(new FabricItemSettings().group(ItemGroup.MISC));
     public static final MushieLayer GOOMBA_LAYER = new MushieLayer();
     public static final SoundEvent MUSHIE_EQUIP_SOUND = registerEquipSound("goomba_armor_equip");
 
@@ -55,7 +57,7 @@ public class MushieLayer implements ArmorMaterial {
 
     @Override
     public float getToughness() {
-        return 0.7F;
+        return 1.5F;
     }
 
     @Override

@@ -5,14 +5,12 @@ import net.minecraft.sound.SoundEvents;
 import net.openbagtwo.unobtainiumarmor.UnobtainiumArmorMod;
 import net.openbagtwo.unobtainiumarmor.factory.ArmorItemFactory;
 import net.openbagtwo.unobtainiumarmor.factory.MaterialFactory;
-import net.openbagtwo.unobtainiumarmor.materials.*;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import net.openbagtwo.unobtainiumarmor.materials.MushieLayer;
 import nourl.mythicmetals.item.MythicItems;
-import ru.betterend.item.ArmoredElytra;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -20,8 +18,6 @@ import java.util.Map;
 
 import static net.openbagtwo.unobtainiumarmor.factory.MaterialFactory.durabilityValues;
 import static net.openbagtwo.unobtainiumarmor.factory.MaterialFactory.slotValues;
-import static net.openbagtwo.unobtainiumarmor.items.Bumblenado.BUMBLENADO_GEM;
-import static net.openbagtwo.unobtainiumarmor.items.Sapphire.SAPPHIRE;
 
 public class Armors {
 
@@ -70,6 +66,40 @@ public class Armors {
     ).setElytraProperties(0.97, false
     ).makeMythril().getItemsForRegistration();
 
+    public static final Map<String, Item> PLATINUM = ArmorItemFactory.makeArmorSet(
+            MaterialFactory.makeMaterial("platinum", MythicItems.PLATINUM_INGOT
+            ).setDurability(durabilityValues(9)
+            ).setProtection(slotValues(3, 6, 4, 2)
+            ).setEnchantability(24
+            ).setEquipSound(SoundEvents.ITEM_ARMOR_EQUIP_GOLD)
+    ).getItemsForRegistration();
+
+    public static final Map<String, Item> SAPPHIRE = ArmorItemFactory.makeArmorSet("sapphire"
+    ).setDurability(slotValues(1, 1, 1, 1, 16)
+    ).setProtection(slotValues(1, 1, 1, 1)
+    ).setEnchantability(64).setEquipSound(SoundEvents.BLOCK_NOTE_BLOCK_DIDGERIDOO
+    ).getItemsForRegistration();
+
+    // Adapting from MoreGems' Gilded Carbonado
+    public static final Map<String, Item> BUMBLENADO = ArmorItemFactory.makeArmorSet("bumblenado"
+    ).setDurability(durabilityValues(33)
+    ).setProtection(slotValues(3, 8, 6, 3)
+    ).setEnchantability(10
+    ).setEquipSound(SoundEvents.ENTITY_BEE_LOOP_AGGRESSIVE
+    ).setToughness(0.75F
+    ).setKnockbackResistance(0.25F
+    ).setElytraProperties(0.87, true
+    ).getItemsForRegistration();
+
+    public static final Map<String, Item> MUSHIE_COIN_COIN = Collections.singletonMap(
+            "goomba_coin_coin",
+            MushieLayer.GOOMBA_COIN_COIN
+    );
+    public static final Map<String, Item> MUSHIE = ArmorItemFactory.makeArmorSet(
+            "goomba", MushieLayer.GOOMBA_LAYER
+    ).setElytraProperties(0.93, false
+    ).getItemsForRegistration();
+
     public static Map<String, Item> allItems(){
         HashMap<String, Item> allItems = new HashMap<>();
         allItems.putAll(UNOBTAINIUM);
@@ -78,28 +108,13 @@ public class Armors {
         allItems.putAll(MYTHRIL);
         allItems.putAll(CITRINE);
         allItems.putAll(CYTHRIL);
+        allItems.putAll(PLATINUM);
+        allItems.putAll(SAPPHIRE);
+        allItems.putAll(BUMBLENADO);
+        allItems.putAll(MUSHIE_COIN_COIN);
+        allItems.putAll(MUSHIE);
         return allItems;
     }
-    public static final ArmorMaterial platinumMaterial = new PlatinumMaterial();
-    public static final ArmorMaterial sapphireMaterial = new SapphireMaterial();
-    public static final ArmorMaterial bumblenadoMaterial = new BumblenadoMaterial();
-
-    public static final Item PLATINUM_HELMET = new ArmorItem(platinumMaterial, EquipmentSlot.HEAD, new Item.Settings().group(MythicItems.PLATINUM_INGOT.getGroup()));
-    public static final Item PLATINUM_CHESTPLATE = new ArmorItem(platinumMaterial, EquipmentSlot.CHEST, new Item.Settings().group(MythicItems.PLATINUM_INGOT.getGroup()));
-    public static final Item PLATINUM_LEGGINGS = new ArmorItem(platinumMaterial, EquipmentSlot.LEGS, new Item.Settings().group(MythicItems.PLATINUM_INGOT.getGroup()));
-    public static final Item PLATINUM_BOOTS = new ArmorItem(platinumMaterial, EquipmentSlot.FEET, new Item.Settings().group(MythicItems.PLATINUM_INGOT.getGroup()));
-
-    public static final Item SAPPHIRE_HELMET = new ArmorItem(sapphireMaterial, EquipmentSlot.HEAD, new Item.Settings().group(SAPPHIRE.getGroup()));
-    public static final Item SAPPHIRE_CHESTPLATE = new ArmorItem(sapphireMaterial, EquipmentSlot.CHEST, new Item.Settings().group(SAPPHIRE.getGroup()));
-    public static final Item SAPPHIRE_LEGGINGS = new ArmorItem(sapphireMaterial, EquipmentSlot.LEGS, new Item.Settings().group(SAPPHIRE.getGroup()));
-    public static final Item SAPPHIRE_BOOTS = new ArmorItem(sapphireMaterial, EquipmentSlot.FEET, new Item.Settings().group(SAPPHIRE.getGroup()));
-
-    public static final Item BUMBLENADO_HELMET = new ArmorItem(bumblenadoMaterial, EquipmentSlot.HEAD, new Item.Settings().group(BUMBLENADO_GEM.getGroup()));
-    public static final Item BUMBLENADO_CHESTPLATE = new ArmorItem(bumblenadoMaterial, EquipmentSlot.CHEST, new Item.Settings().group(BUMBLENADO_GEM.getGroup()));
-    public static final Item BUMBLENADO_LEGGINGS = new ArmorItem(bumblenadoMaterial, EquipmentSlot.LEGS, new Item.Settings().group(BUMBLENADO_GEM.getGroup()));
-    public static final Item BUMBLENADO_BOOTS = new ArmorItem(bumblenadoMaterial, EquipmentSlot.FEET, new Item.Settings().group(BUMBLENADO_GEM.getGroup()));
-
-    public static final Item BUMBLENADO_ELYTRA = new ArmoredElytra("bumblenado_elytra", bumblenadoMaterial, BUMBLENADO_GEM, BUMBLENADO_CHESTPLATE.getMaxDamage(), 0.83, true);
 
     public static void register() {
         for (Map.Entry<String, Item> item : allItems().entrySet()){
@@ -109,27 +124,5 @@ public class Armors {
                     item.getValue()
             );
         }
-
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "platinum_helmet"), PLATINUM_HELMET);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "platinum_chestplate"), PLATINUM_CHESTPLATE);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "platinum_leggings"), PLATINUM_LEGGINGS);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "platinum_boots"), PLATINUM_BOOTS);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "sapphire"), SAPPHIRE);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "sapphire_helmet"), SAPPHIRE_HELMET);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "sapphire_chestplate"), SAPPHIRE_CHESTPLATE);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "sapphire_leggings"), SAPPHIRE_LEGGINGS);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "sapphire_boots"), SAPPHIRE_BOOTS);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "bumblenado_gem"), BUMBLENADO_GEM);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "bumblenado_helmet"), BUMBLENADO_HELMET);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "bumblenado_chestplate"), BUMBLENADO_CHESTPLATE);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "bumblenado_leggings"), BUMBLENADO_LEGGINGS);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "bumblenado_boots"), BUMBLENADO_BOOTS);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "bumblenado_elytra"), BUMBLENADO_ELYTRA);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "goomba_coin_coin"), MushieItem.GOOMBA_COIN_COIN);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "goomba_helmet"), MushieItem.GOOMBA_HELMET);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "goomba_chestplate"), MushieItem.GOOMBA_CHESTPLATE);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "goomba_leggings"), MushieItem.GOOMBA_LEGGINGS);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "goomba_boots"), MushieItem.GOOMBA_BOOTS);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "goomba_elytra"), MushieItem.GOOMBA_ELYTRA);
     }
 }
