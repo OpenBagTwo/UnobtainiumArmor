@@ -25,7 +25,7 @@ public class MythrilArmorModel extends AnimatedGeoModel<MythrilArmorItem> {
         return new Identifier(UnobtainiumArmorMod.MOD_ID, String.format("animations/%s.json", this._ani));
     }
 
-    private MythrilArmorModel(){}
+    public MythrilArmorModel(){}
 
     public MythrilArmorModel setModel(String name){
         this._model = name;
@@ -40,6 +40,6 @@ public class MythrilArmorModel extends AnimatedGeoModel<MythrilArmorItem> {
         return this;
     }
 
-    public static MythrilArmorModel MYTHRIL = new MythrilArmorModel();
+    public static final MythrilArmorModel MYTHRIL = new MythrilArmorModel();
 
 }

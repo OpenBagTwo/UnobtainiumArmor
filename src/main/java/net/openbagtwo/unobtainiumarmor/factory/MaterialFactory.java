@@ -28,6 +28,10 @@ public class MaterialFactory implements ArmorMaterial {
         return slotValues(11, 16, 15, 13, multiplier);
     }
 
+    public static Item getMaterialIngredient(ArmorMaterial armorMaterial){
+        return armorMaterial.getRepairIngredient().getMatchingStacks()[0].getItem();
+    }
+
     protected final String _name;  // name of the material
     protected final Item _ingredient;  // the crafting / repair material
 
@@ -35,8 +39,8 @@ public class MaterialFactory implements ArmorMaterial {
     private Map<EquipmentSlot, Integer> _durability = durabilityValues(15);
     private Map<EquipmentSlot, Integer> _protection = slotValues(2, 6, 5, 2);
     private int _enchantability = 14;  // higher is better
-    private float _toughness = 0;
-    private float _knockbackResistance = 0;
+    private float _toughness = 0; // Diamond = 2
+    private float _knockbackResistance = 0;  // <1; Fabric tutorial said this needs mixins?
     private SoundEvent _equipSound = SoundEvents.ITEM_ARMOR_EQUIP_GENERIC;
 
     private MaterialFactory(String name, Item ingredient){
@@ -44,25 +48,25 @@ public class MaterialFactory implements ArmorMaterial {
         this._ingredient = ingredient;
     }
 
-    public MaterialFactory(ArmorMaterial otherFactory){
-        this._name = otherFactory.getName();
-        this._ingredient = otherFactory.getRepairIngredient().getMatchingStacks()[0].getItem();
+    public MaterialFactory(ArmorMaterial otherMaterial){
+        this._name = otherMaterial.getName();
+        this._ingredient = getMaterialIngredient(otherMaterial);
         this._durability = slotValues(
-                otherFactory.getDurability(EquipmentSlot.HEAD),
-                otherFactory.getDurability(EquipmentSlot.CHEST),
-                otherFactory.getDurability(EquipmentSlot.LEGS),
-                otherFactory.getDurability(EquipmentSlot.FEET)
+                otherMaterial.getDurability(EquipmentSlot.HEAD),
+                otherMaterial.getDurability(EquipmentSlot.CHEST),
+                otherMaterial.getDurability(EquipmentSlot.LEGS),
+                otherMaterial.getDurability(EquipmentSlot.FEET)
         );
         this._protection = slotValues(
-                otherFactory.getProtectionAmount(EquipmentSlot.HEAD),
-                otherFactory.getProtectionAmount(EquipmentSlot.CHEST),
-                otherFactory.getProtectionAmount(EquipmentSlot.LEGS),
-                otherFactory.getProtectionAmount(EquipmentSlot.FEET)
+                otherMaterial.getProtectionAmount(EquipmentSlot.HEAD),
+                otherMaterial.getProtectionAmount(EquipmentSlot.CHEST),
+                otherMaterial.getProtectionAmount(EquipmentSlot.LEGS),
+                otherMaterial.getProtectionAmount(EquipmentSlot.FEET)
         );
-        this._enchantability = otherFactory.getEnchantability();
-        this._toughness = otherFactory.getToughness();
-        this._knockbackResistance = otherFactory.getKnockbackResistance();
-        this._equipSound = otherFactory.getEquipSound();
+        this._enchantability = otherMaterial.getEnchantability();
+        this._toughness = otherMaterial.getToughness();
+        this._knockbackResistance = otherMaterial.getKnockbackResistance();
+        this._equipSound = otherMaterial.getEquipSound();
     }
 
     @Override
@@ -124,12 +128,12 @@ public class MaterialFactory implements ArmorMaterial {
         return this;
     }
 
-    public MaterialFactory setToughness(int toughness){
+    public MaterialFactory setToughness(float toughness){
         this._toughness = toughness;
         return this;
     }
 
-    public MaterialFactory setKnockbackResistance(int knockbackResistance){
+    public MaterialFactory setKnockbackResistance(float knockbackResistance){
         this._knockbackResistance = knockbackResistance;
         return this;
     }

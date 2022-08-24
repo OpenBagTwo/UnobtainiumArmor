@@ -23,7 +23,7 @@ public class MythrilArmorRenderer extends GeoArmorRenderer<MythrilArmorItem> {
     }
 
     public static MythrilArmorRenderer createMythrilRenderer(String name){
-        MythrilArmorModel armorModel = MythrilArmorModel.MYTHRIL.setTexture(name);
+        MythrilArmorModel armorModel = new MythrilArmorModel().setTexture(name + "_armor_texture");
         return createMythrilRenderer(armorModel);
     }
 }

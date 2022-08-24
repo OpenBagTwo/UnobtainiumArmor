@@ -1,5 +1,6 @@
 package net.openbagtwo.unobtainiumarmor.items;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.sound.SoundEvents;
 import net.openbagtwo.unobtainiumarmor.UnobtainiumArmorMod;
 import net.openbagtwo.unobtainiumarmor.factory.ArmorItemFactory;
@@ -13,6 +14,7 @@ import net.minecraft.util.registry.Registry;
 import nourl.mythicmetals.item.MythicItems;
 import ru.betterend.item.ArmoredElytra;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -32,26 +34,50 @@ public class Armors {
             )
     ).getItemsForRegistration();
 
-    public static final Map<String, Item> ALEXANDRITE = (
-            (ArmorItemFactory) ArmorItemFactory.makeArmorSet("alexandrite"
+    public static final Map<String, Item> ALEXANDRITE = ArmorItemFactory.makeArmorSet("alexandrite"
             ).setDurability(durabilityValues(16)
             ).setProtection(slotValues(1, 2, 2, 1)
-            ).setEnchantability(36).setEquipSound(SoundEvents.BLOCK_NOTE_BLOCK_HARP)
+            ).setEnchantability(36).setEquipSound(SoundEvents.BLOCK_NOTE_BLOCK_HARP
     ).getItemsForRegistration();
 
-    public static final Map<String, Item> CATS_EYE = (
-            (ArmorItemFactory) ArmorItemFactory.makeArmorSet("cats_eye_gem"
+    public static final Map<String, Item> CATS_EYE = ArmorItemFactory.makeArmorSet("cats_eye_gem"
             ).setDurability(slotValues(4, 3, 2, 1, 9)
             ).setProtection(slotValues(1, 1, 1, 1)
-            ).setEnchantability(2).setEquipSound(SoundEvents.ENTITY_CAT_PURREOW)
+            ).setEnchantability(2).setEquipSound(SoundEvents.ENTITY_CAT_PURREOW
     ).setElytraProperties(0.999, false
     ).getItemsForRegistration();
+
+    public static final Map<String, Item> MYTHRIL = ArmorItemFactory.makeArmorSet(
+            "mythril",
+            MaterialFactory.makeMaterial("slime", Items.SLIME_BALL)
+                    .setDurability(durabilityValues(14))
+                    .setProtection(slotValues(3, 8, 6, 3))
+                    .setEnchantability(1)
+                    .setEquipSound(SoundEvents.ENTITY_SLIME_ATTACK)
+                    .setKnockbackResistance(0.99F)
+    ).setElytraProperties(0.8, false).makeMythril().getItemsForRegistration();
+
+    public static final Map<String, Item> CITRINE = Collections.singletonMap(
+            "citrine_crystal",
+            new Item(new FabricItemSettings().group(ItemGroup.MATERIALS))
+    );
+    public static final Map<String, Item> CYTHRIL = ArmorItemFactory.makeArmorSet(
+            MaterialFactory.makeMaterial("citrine", CITRINE.values().iterator().next())
+    ).setDurability(durabilityValues(18)
+    ).setProtection(slotValues(1, 2, 2, 1)
+    ).setEnchantability(28
+    ).setEquipSound(SoundEvents.BLOCK_BEACON_POWER_SELECT
+    ).setElytraProperties(0.97, false
+    ).makeMythril().getItemsForRegistration();
 
     public static Map<String, Item> allItems(){
         HashMap<String, Item> allItems = new HashMap<>();
         allItems.putAll(UNOBTAINIUM);
         allItems.putAll(ALEXANDRITE);
         allItems.putAll(CATS_EYE);
+        allItems.putAll(MYTHRIL);
+        allItems.putAll(CITRINE);
+        allItems.putAll(CYTHRIL);
         return allItems;
     }
     public static final ArmorMaterial platinumMaterial = new PlatinumMaterial();
@@ -99,22 +125,11 @@ public class Armors {
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "bumblenado_leggings"), BUMBLENADO_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "bumblenado_boots"), BUMBLENADO_BOOTS);
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "bumblenado_elytra"), BUMBLENADO_ELYTRA);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "mythril_helmet"), MythrilArmorItem.MYTHRIL_HELMET);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "mythril_chestplate"), MythrilArmorItem.MYTHRIL_CHESTPLATE);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "mythril_leggings"), MythrilArmorItem.MYTHRIL_LEGGINGS);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "mythril_boots"), MythrilArmorItem.MYTHRIL_BOOTS);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "mythril_elytra"), MythrilArmorItem.MYTHRIL_ELYTRA);
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "goomba_coin_coin"), MushieItem.GOOMBA_COIN_COIN);
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "goomba_helmet"), MushieItem.GOOMBA_HELMET);
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "goomba_chestplate"), MushieItem.GOOMBA_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "goomba_leggings"), MushieItem.GOOMBA_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "goomba_boots"), MushieItem.GOOMBA_BOOTS);
         Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "goomba_elytra"), MushieItem.GOOMBA_ELYTRA);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "citrine_crystal"), CitrineMaterial.CITRINE);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "citrine_helmet"), CythrilArmorItem.CYTHRIL_HELMET);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "citrine_chestplate"), CythrilArmorItem.CYTHRIL_CHESTPLATE);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "citrine_leggings"), CythrilArmorItem.CYTHRIL_LEGGINGS);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "citrine_boots"), CythrilArmorItem.CYTHRIL_BOOTS);
-        Registry.register(Registry.ITEM, new Identifier(UnobtainiumArmorMod.MOD_ID, "citrine_elytra"), CythrilArmorItem.CYTHRIL_ELYTRA);
     }
 }
