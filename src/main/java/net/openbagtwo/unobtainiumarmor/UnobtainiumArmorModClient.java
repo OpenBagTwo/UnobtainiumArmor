@@ -45,5 +45,10 @@ public class UnobtainiumArmorModClient implements ClientModInitializer {
                 MythrilArmorRenderer.createMythrilRenderer("cythril"),
                 getArmorItems(Armors.CYTHRIL)
         );
+
+        GeoArmorRenderer.registerArmorRenderer(
+                MythrilArmorRenderer.createMythrilRenderer("topaz"),
+                getArmorItems(Armors.TOPAZ)
+        );
     }
 }

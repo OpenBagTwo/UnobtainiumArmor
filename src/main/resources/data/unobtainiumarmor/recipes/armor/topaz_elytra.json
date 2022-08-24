@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ce"
+  ],
+  "key": {
+    "c": {
+      "item": "unobtainiumarmor:topaz_chestplate"
+    },
+    "e": {
+      "item": "minecraft:elytra"
+    }
+  },
+  "result": {
+    "item": "unobtainiumarmor:topaz_elytra",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mmm",
+    "m m",
+    "m m"
+  ],
+  "key": {
+    "m": {
+      "item": "unobtainiumarmor:topaz"
+    }
+  },
+  "result": {
+    "item": "unobtainiumarmor:topaz_leggings",
+    "count": 1
+  }
+}

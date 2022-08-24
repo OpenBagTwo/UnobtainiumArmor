@@ -100,6 +100,12 @@ public class Armors {
     ).setElytraProperties(0.93, false
     ).getItemsForRegistration();
 
+    public static final Map<String, Item> TOPAZ = ArmorItemFactory.makeArmorSet("topaz"
+    ).setEquipSound(SoundEvents.BLOCK_TUFF_STEP
+    ).setElytraProperties(0.95, false
+    ).makeMythril(
+    ).getItemsForRegistration();
+
     public static Map<String, Item> allItems(){
         HashMap<String, Item> allItems = new HashMap<>();
         allItems.putAll(UNOBTAINIUM);
@@ -113,6 +119,7 @@ public class Armors {
         allItems.putAll(BUMBLENADO);
         allItems.putAll(MUSHIE_COIN_COIN);
         allItems.putAll(MUSHIE);
+        allItems.putAll(TOPAZ);
         return allItems;
     }
 
