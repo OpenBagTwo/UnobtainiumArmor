@@ -17,6 +17,11 @@ public class MythrilArmorRenderer extends GeoArmorRenderer<MythrilArmorItem> {
     }
 
     public static final MythrilArmorRenderer MYTHRIL = new MythrilArmorRenderer(MythrilArmorModel.MYTHRIL);
+    public static final MythrilArmorRenderer CYTHRIL = new MythrilArmorRenderer(
+            new MythrilArmorModel()
+                    .setModel("cythril_armor")
+                    .setTexture("cythril_armor_texture")
+    );
 
     public static MythrilArmorRenderer createMythrilRenderer(MythrilArmorModel armorModel){
         return new MythrilArmorRenderer(armorModel);

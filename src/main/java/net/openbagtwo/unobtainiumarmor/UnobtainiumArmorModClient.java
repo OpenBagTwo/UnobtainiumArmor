@@ -7,6 +7,7 @@ import net.minecraft.client.particle.SpitParticle;
 import net.minecraft.item.Item;
 import net.minecraft.screen.PlayerScreenHandler;
 import net.minecraft.util.Identifier;
+import net.openbagtwo.unobtainiumarmor.entity.client.armor.MythrilArmorModel;
 import net.openbagtwo.unobtainiumarmor.entity.client.armor.MythrilArmorRenderer;
 import net.openbagtwo.unobtainiumarmor.factory.ArmorItemFactory;
 import net.openbagtwo.unobtainiumarmor.items.Armors;
@@ -42,7 +43,7 @@ public class UnobtainiumArmorModClient implements ClientModInitializer {
                 getArmorItems(Armors.MYTHRIL)
         );
         GeoArmorRenderer.registerArmorRenderer(
-                MythrilArmorRenderer.createMythrilRenderer("cythril"),
+                MythrilArmorRenderer.CYTHRIL,
                 getArmorItems(Armors.CYTHRIL)
         );
 
