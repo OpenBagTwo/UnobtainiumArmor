@@ -78,7 +78,7 @@ public class Armors {
     ).setDurability(slotValues(1, 1, 1, 1, 16)
     ).setProtection(slotValues(1, 1, 1, 1)
     ).setEnchantability(64).setEquipSound(SoundEvents.BLOCK_NOTE_BLOCK_DIDGERIDOO
-    ).getItemsForRegistration();
+    ).makeMythril().getItemsForRegistration();
 
     // Adapting from MoreGems' Gilded Carbonado
     public static final Map<String, Item> BUMBLENADO = ArmorItemFactory.makeArmorSet("bumblenado"
