@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mmm",
+    "m m"
+  ],
+  "key": {
+    "m": {
+      "item": "minecraft:ghast_tear"
+    }
+  },
+  "result": {
+    "item": "unobtainiumarmor:infinity_helmet",
+    "count": 1
+  }
+}
