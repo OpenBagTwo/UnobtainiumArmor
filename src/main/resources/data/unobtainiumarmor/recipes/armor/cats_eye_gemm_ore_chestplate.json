@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "m m",
+    "mmm",
+    "mmm"
+  ],
+  "key": {
+    "m": {
+      "item": "unobtainiumarmor:cats_eye_gemm_ore"
+    }
+  },
+  "result": {
+    "item": "unobtainiumarmor:cats_eye_gemm_ore_chestplate",
+    "count": 1
+  }
+}

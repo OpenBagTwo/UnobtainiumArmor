@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "unobtainiumarmor:item/cats_eye_gemm_ore_boots"
+  }
+}

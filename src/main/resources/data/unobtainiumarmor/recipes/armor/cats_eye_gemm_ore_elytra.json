@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ce"
+  ],
+  "key": {
+    "c": {
+      "item": "unobtainiumarmor:cats_eye_gemm_ore_chestplate"
+    },
+    "e": {
+      "item": "minecraft:elytra"
+    }
+  },
+  "result": {
+    "item": "unobtainiumarmor:cats_eye_gemm_ore_elytra",
+    "count": 1
+  }
+}
