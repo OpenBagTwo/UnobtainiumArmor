@@ -16,6 +16,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+import static net.openbagtwo.unobtainiumarmor.blocks.Blocks.BLOCK_ITEMS;
 import static net.openbagtwo.unobtainiumarmor.factory.MaterialFactory.durabilityValues;
 import static net.openbagtwo.unobtainiumarmor.factory.MaterialFactory.slotValues;
 
@@ -113,7 +114,10 @@ public class Armors {
   ).getItemsForRegistration();
 
   public static final Map<String, Item> CATS_EYE_GEMM_ORE = ArmorItemFactory.makeArmorSet(
-      "cats_eye_gemm_ore"
+      MaterialFactory.makeMaterial(
+          "cats_eye_gemm_ore",
+          BLOCK_ITEMS.get("cats_eye_gemm_ore")
+      )
   ).setEquipSound(SoundEvents.BLOCK_COPPER_BREAK
   ).setElytraProperties(0.99, true
   ).getItemsForRegistration();

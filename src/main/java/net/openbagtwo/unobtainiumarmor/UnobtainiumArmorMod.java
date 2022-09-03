@@ -18,8 +18,8 @@ public class UnobtainiumArmorMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		Armors.register();
 		Blocks.register();
+		Armors.register();
 		RegisterParticles.register();
 		LOGGER.info("UnobtainiumArmor mod initialized.");
 	}
