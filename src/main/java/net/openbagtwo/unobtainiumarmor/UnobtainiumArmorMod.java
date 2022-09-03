@@ -1,6 +1,7 @@
 package net.openbagtwo.unobtainiumarmor;
 
 import net.fabricmc.api.ModInitializer;
+import net.openbagtwo.unobtainiumarmor.blocks.Blocks;
 import net.openbagtwo.unobtainiumarmor.items.Armors;
 import net.openbagtwo.unobtainiumarmor.particle.RegisterParticles;
 import org.slf4j.Logger;
@@ -18,6 +19,7 @@ public class UnobtainiumArmorMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		Armors.register();
+		Blocks.register();
 		RegisterParticles.register();
 		LOGGER.info("UnobtainiumArmor mod initialized.");
 	}

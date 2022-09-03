@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "unobtainiumarmor:blocks/catseyegemm_ore",
+    "particle": "unobtainiumarmor:blocks/catseyegemm_ore"
+  }
+}
