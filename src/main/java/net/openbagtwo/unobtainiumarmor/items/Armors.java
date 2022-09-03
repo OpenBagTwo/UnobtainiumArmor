@@ -112,6 +112,12 @@ public class Armors {
   ).makeMythril(
   ).getItemsForRegistration();
 
+  public static final Map<String, Item> CATS_EYE_GEMM_ORE = ArmorItemFactory.makeArmorSet(
+      "cats_eye_gemm_ore"
+  ).setEquipSound(SoundEvents.BLOCK_COPPER_BREAK
+  ).setElytraProperties(0.99, true
+  ).getItemsForRegistration();
+
   public static Map<String, Item> allItems() {
     HashMap<String, Item> allItems = new HashMap<>();
     allItems.putAll(UNOBTAINIUM);
@@ -127,6 +133,7 @@ public class Armors {
     allItems.putAll(MUSHIE);
     allItems.putAll(TOPAZ);
     allItems.putAll(INFINITY);
+    allItems.putAll(CATS_EYE_GEMM_ORE);
     return allItems;
   }
 
