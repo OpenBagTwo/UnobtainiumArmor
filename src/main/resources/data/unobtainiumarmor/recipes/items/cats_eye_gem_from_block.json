@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "unobtainiumarmor:cats_eye_gemm_block"
+    }
+  ],
+  "result": {
+    "item": "unobtainiumarmor:cats_eye_gem",
+    "count": 9
+  }
+}

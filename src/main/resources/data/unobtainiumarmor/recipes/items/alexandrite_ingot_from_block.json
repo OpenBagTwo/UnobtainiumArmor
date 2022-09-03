@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "unobtainiumarmor:alexandrite_block"
+    }
+  ],
+  "result": {
+    "item": "unobtainiumarmor:alexandrite",
+    "count": 9
+  }
+}
