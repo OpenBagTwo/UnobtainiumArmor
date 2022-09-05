@@ -122,6 +122,11 @@ public class Armors {
   ).setElytraProperties(0.99, true
   ).getItemsForRegistration();
 
+  public static final Map<String, Item> TANZANITE = ArmorItemFactory.makeArmorSet("tanzanite"
+  ).setEquipSound(SoundEvents.BLOCK_NOTE_BLOCK_GUITAR
+  ).setElytraProperties(0.95, false
+  ).getItemsForRegistration();
+
   public static Map<String, Item> allItems() {
     HashMap<String, Item> allItems = new HashMap<>();
     allItems.putAll(UNOBTAINIUM);
@@ -138,6 +143,7 @@ public class Armors {
     allItems.putAll(TOPAZ);
     allItems.putAll(INFINITY);
     allItems.putAll(CATS_EYE_GEMM_ORE);
+    allItems.putAll(TANZANITE);
     return allItems;
   }
 

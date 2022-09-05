@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mmm",
+    "m m",
+    "m m"
+  ],
+  "key": {
+    "m": {
+      "item": "unobtainiumarmor:tanzanite_gem"
+    }
+  },
+  "result": {
+    "item": "unobtainiumarmor:tanzanite_leggings",
+    "count": 1
+  }
+}
