@@ -62,5 +62,11 @@ public class UnobtainiumArmorModClient implements ClientModInitializer {
         ),
         getArmorItems(Armors.INFINITY)
     );
+    GeoArmorRenderer.registerArmorRenderer(
+        MythrilArmorRenderer.createMythrilRenderer(
+            new MythrilArmorModel().setModel("end_armor").setTexture("end_armor_texture")
+        ),
+        getArmorItems(Armors.END_ARMOR)
+    );
   }
 }

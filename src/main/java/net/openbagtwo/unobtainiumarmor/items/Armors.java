@@ -127,6 +127,13 @@ public class Armors {
   ).setElytraProperties(0.95, false
   ).getItemsForRegistration();
 
+  public static final Map<String, Item> END_ARMOR = ArmorItemFactory.makeArmorSet(
+      MaterialFactory.makeMaterial("end_armor", Items.ENDER_EYE)
+  ).setEquipSound(SoundEvents.ENTITY_PARROT_IMITATE_ENDER_DRAGON
+  ).setElytraProperties(0.82, true
+  ).makeMythril(
+  ).getItemsForRegistration();
+
   public static Map<String, Item> allItems() {
     HashMap<String, Item> allItems = new HashMap<>();
     allItems.putAll(UNOBTAINIUM);
@@ -144,6 +151,7 @@ public class Armors {
     allItems.putAll(INFINITY);
     allItems.putAll(CATS_EYE_GEMM_ORE);
     allItems.putAll(TANZANITE);
+    allItems.putAll(END_ARMOR);
     return allItems;
   }
 
