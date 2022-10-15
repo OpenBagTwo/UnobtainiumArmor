@@ -1,6 +1,7 @@
 package net.openbagtwo.unobtainiumarmor.items;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.sound.SoundEvents;
 import net.openbagtwo.unobtainiumarmor.UnobtainiumArmorMod;
 import net.openbagtwo.unobtainiumarmor.factory.ArmorItemFactory;
@@ -54,7 +55,9 @@ public class Armors {
           .setEnchantability(1)
           .setEquipSound(SoundEvents.ENTITY_SLIME_ATTACK)
           .setKnockbackResistance(0.99F)
-  ).setElytraProperties(0.8, false).makeMythril().getItemsForRegistration();
+  ).setElytraProperties(0.8, false
+  ).addEffect(StatusEffects.RESISTANCE, 2
+  ).makeMythril().getItemsForRegistration();
 
   public static final Map<String, Item> CITRINE = Collections.singletonMap(
       "citrine_crystal",
@@ -92,6 +95,7 @@ public class Armors {
   ).setToughness(0.75F
   ).setKnockbackResistance(0.25F
   ).setElytraProperties(0.87, true
+  ).addEffect(StatusEffects.SLOW_FALLING
   ).getItemsForRegistration();
 
   public static final Map<String, Item> MUSHIE_COIN_COIN = Collections.singletonMap(
@@ -138,6 +142,14 @@ public class Armors {
 
   public static final Map<String, Item> INFINIONIC_ARMOR = ArmorItemFactory.makeArmorSet(
       "infinionic_armor", InfinionicLayer.INFINIONIC_LAYER
+  ).addEffect(StatusEffects.GLOWING
+  ).addEffect(StatusEffects.RESISTANCE, 127
+  ).addEffect(StatusEffects.FIRE_RESISTANCE, 127
+  ).addEffect(StatusEffects.STRENGTH, 127
+  ).addEffect(StatusEffects.HASTE, 127
+  ).addEffect(StatusEffects.SPEED, 2
+  ).addEffect(StatusEffects.ABSORPTION, 10
+  ).addEffect(StatusEffects.WITHER, 3, 120
   ).getItemsForRegistration();
 
   public static Map<String, Item> allItems() {

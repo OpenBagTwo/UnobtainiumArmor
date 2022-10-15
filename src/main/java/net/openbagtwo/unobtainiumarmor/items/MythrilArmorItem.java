@@ -1,7 +1,10 @@
 package net.openbagtwo.unobtainiumarmor.items;
+import java.util.Collections;
+import java.util.List;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.decoration.ArmorStandEntity;
+import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.*;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
@@ -11,10 +14,14 @@ import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
-public class MythrilArmorItem extends ArmorItem implements IAnimatable {
+public class MythrilArmorItem extends EffectArmor implements IAnimatable {
+
+    public MythrilArmorItem(ArmorMaterial material, EquipmentSlot slot, List<StatusEffectInstance> effects) {
+        super(material, slot, effects);
+    }
 
     public MythrilArmorItem(ArmorMaterial material, EquipmentSlot slot) {
-        super(material, slot, new Item.Settings().group(ItemGroup.COMBAT));
+        super(material, slot, Collections.emptyList());
     }
 
     private final AnimationFactory factory = new AnimationFactory(this);
