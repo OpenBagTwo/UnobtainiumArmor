@@ -9,6 +9,7 @@ import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import net.openbagtwo.unobtainiumarmor.materials.InfinionicLayer;
 import net.openbagtwo.unobtainiumarmor.materials.MushieLayer;
 import nourl.mythicmetals.item.MythicItems;
 
@@ -19,6 +20,7 @@ import java.util.Map;
 import static net.openbagtwo.unobtainiumarmor.blocks.Blocks.BLOCK_ITEMS;
 import static net.openbagtwo.unobtainiumarmor.factory.MaterialFactory.durabilityValues;
 import static net.openbagtwo.unobtainiumarmor.factory.MaterialFactory.slotValues;
+import static net.openbagtwo.unobtainiumarmor.materials.InfinionicLayer.INFINIONIC_GEMS;
 
 public class Armors {
 
@@ -134,6 +136,10 @@ public class Armors {
   ).makeMythril(
   ).getItemsForRegistration();
 
+  public static final Map<String, Item> INFINIONIC_ARMOR = ArmorItemFactory.makeArmorSet(
+      "infinionic", InfinionicLayer.INFINIONIC_LAYER
+  ).getItemsForRegistration();
+
   public static Map<String, Item> allItems() {
     HashMap<String, Item> allItems = new HashMap<>();
     allItems.putAll(UNOBTAINIUM);
@@ -152,6 +158,8 @@ public class Armors {
     allItems.putAll(CATS_EYE_GEMM_ORE);
     allItems.putAll(TANZANITE);
     allItems.putAll(END_ARMOR);
+    allItems.putAll(INFINIONIC_GEMS);
+    allItems.putAll(INFINIONIC_ARMOR);
     return allItems;
   }
 
