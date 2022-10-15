@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "m m"
+  ],
+  "key": {
+    "m": {
+      "item": "minecraft:gold"
+    }
+  },
+  "result": {
+    "item": "unobtainiumarmor:infinionic_armor_boots",
+    "count": 1
+  }
+}

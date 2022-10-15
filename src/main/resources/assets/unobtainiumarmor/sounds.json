@@ -2,5 +2,12 @@
     "goomba_armor_equip": {
         "category": "player",
         "sounds": ["unobtainiumarmor:item/armor/bruh"]
+    },
+    "infinioic_armor_equip": {
+        "category": "player",
+        "sounds": [
+            "unobtainiumarmor:item/armor/b_wtb",
+            "unobtainiumarmor:item/armor/b_sfw"
+            ]
     }
 }

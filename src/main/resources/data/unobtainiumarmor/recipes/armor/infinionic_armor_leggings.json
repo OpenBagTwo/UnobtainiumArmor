@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mbm",
+    "m m",
+    "m m"
+  ],
+  "key": {
+    "m": {
+      "item": "minecraft:gold"
+    },
+    "b": {
+      "item": "unobtainiumarmor:infinionic_gem_blue"
+    }
+  },
+  "result": {
+    "item": "unobtainiumarmor:infinionic_armor_leggings",
+    "count": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "r p",
+    "mgm",
+    "mmm"
+  ],
+  "key": {
+    "m": {
+      "item": "minecraft:gold"
+    },
+    "p": {
+      "item": "unobtainiumarmor:infinionic_gem_purple"
+    },
+    "g": {
+      "item": "unobtainiumarmor:infinionic_gem_green"
+    },
+    "r": {
+      "item": "unobtainiumarmor:infinionic_gem_red"
+    }
+  },
+  "result": {
+    "item": "unobtainiumarmor:infinionic_armor_chestplate",
+    "count": 1
+  }
+}

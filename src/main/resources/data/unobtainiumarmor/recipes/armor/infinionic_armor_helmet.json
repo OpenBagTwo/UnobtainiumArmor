@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mym",
+    "m m"
+  ],
+  "key": {
+    "m": {
+      "item": "minecraft:gold"
+    },
+    "y": {
+      "item": "unobtainiumarmor:infinionic_gem_yellow"
+    }
+  },
+  "result": {
+    "item": "unobtainiumarmor:infinionic_armor_helmet",
+    "count": 1
+  }
+}
