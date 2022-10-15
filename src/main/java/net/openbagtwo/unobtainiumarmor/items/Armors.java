@@ -143,11 +143,11 @@ public class Armors {
   public static final Map<String, Item> INFINIONIC_ARMOR = ArmorItemFactory.makeArmorSet(
       "infinionic_armor", InfinionicLayer.INFINIONIC_LAYER
   ).addEffect(StatusEffects.GLOWING
-  ).addEffect(StatusEffects.RESISTANCE, 127
-  ).addEffect(StatusEffects.FIRE_RESISTANCE, 127
-  ).addEffect(StatusEffects.STRENGTH, 127
-  ).addEffect(StatusEffects.HASTE, 127
-  ).addEffect(StatusEffects.SPEED, 2
+  ).addEffect(StatusEffects.RESISTANCE, 128
+  ).addEffect(StatusEffects.FIRE_RESISTANCE
+  ).addEffect(StatusEffects.STRENGTH, 128
+  ).addEffect(StatusEffects.HASTE, 128
+  ).addEffect(StatusEffects.SPEED, 3
   ).addEffect(StatusEffects.ABSORPTION, 10
   ).addEffect(StatusEffects.WITHER, 3, 120
   ).getItemsForRegistration();

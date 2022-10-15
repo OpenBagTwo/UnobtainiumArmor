@@ -114,12 +114,12 @@ public class ArmorItemFactory {
         return this;
     }
 
-    public ArmorItemFactory addEffect(StatusEffect effect, int amplifier, int duration) {
+    public ArmorItemFactory addEffect(StatusEffect effect, int level, int duration_sec) {
         this.effects.add(
             new StatusEffectInstance(
                 effect,
-                duration,
-                amplifier,
+                duration_sec*20,
+                Math.max(0, level - 1),
                 false,
                 true,
                 true)
@@ -127,12 +127,13 @@ public class ArmorItemFactory {
         return this;
     }
 
-    public ArmorItemFactory addEffect(StatusEffect effect, int amplifier) {
-        return addEffect(effect, amplifier, 1);
+    public ArmorItemFactory addEffect(StatusEffect effect, int level) {
+        return addEffect(effect, level, 2);
     }
 
     public ArmorItemFactory addEffect(StatusEffect effect) {
-        return addEffect(effect, 0, 1);
+
+        return addEffect(effect, 1);
     }
 
     public Map<String, Item> getItemsForRegistration(){

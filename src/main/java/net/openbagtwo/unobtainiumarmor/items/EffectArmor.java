@@ -36,7 +36,7 @@ public class EffectArmor extends ArmorItem {
     if (this.effects.size() == 0){
       return;
     }
-    if (this.isWearingFullSet(entity)){
+    if (this.isWearingFullSet(entity)) {
       applyEffects((LivingEntity) entity, this.effects);
     }
     super.inventoryTick(stack, world, entity, slot, selected);
@@ -59,6 +59,23 @@ public class EffectArmor extends ArmorItem {
 
   private static void applyEffects(LivingEntity wearer, List<StatusEffectInstance> statusEffects) {
     for (StatusEffectInstance effect: statusEffects) {
+      StatusEffectInstance currentEffectStatus = wearer.getStatusEffect(effect.getEffectType());
+      if (currentEffectStatus != null){
+        // if wearer already has the effect
+        if (currentEffectStatus.getAmplifier() > effect.getAmplifier()) {
+          // and it's stronger than what we're trying to apply
+          // then skip
+          continue;
+        }
+        if (currentEffectStatus.getAmplifier() == effect.getAmplifier()) {
+          // and it's equal inn strength to what we're trying to apply
+          if (effect.getDuration() - currentEffectStatus.getDuration() < 20){
+            // and applying the current effect would extend the duration by less than one second
+            // then skip
+            continue;
+          }
+        }
+      }
       wearer.addStatusEffect(new StatusEffectInstance(effect.getEffectType(),
           effect.getDuration(), effect.getAmplifier()));
     }
