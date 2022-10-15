@@ -7,6 +7,6 @@ import net.minecraft.item.ItemGroup;
 public class InfinionicGem extends Item {
 
   public InfinionicGem() {
-    super(new FabricItemSettings().group(ItemGroup.MISC));
+    super(new FabricItemSettings().group(ItemGroup.MISC).maxCount(1));
   }
 }

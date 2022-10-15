@@ -137,7 +137,7 @@ public class Armors {
   ).getItemsForRegistration();
 
   public static final Map<String, Item> INFINIONIC_ARMOR = ArmorItemFactory.makeArmorSet(
-      "infinionic", InfinionicLayer.INFINIONIC_LAYER
+      "infinionic_armor", InfinionicLayer.INFINIONIC_LAYER
   ).getItemsForRegistration();
 
   public static Map<String, Item> allItems() {
